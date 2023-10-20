@@ -7,7 +7,10 @@
         <PublishAot>true</PublishAot>
         <LangVersion>preview</LangVersion>
         <EnablePackageValidation>true</EnablePackageValidation>
+        <PackageId>IfcConvert.Net.Cloud</PackageId>
+        <Version>1.0.0</Version>
         <Authors>Melethainiel Aerin</Authors>
+        <Company>Melethainiel Aerin</Company>
         <Description>Simple wrapper arround IfcOpenShell</Description>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <PackageProjectUrl>https://github.com/Melethainiel/IfcConvert.Net</PackageProjectUrl>
