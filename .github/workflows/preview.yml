@@ -1,12 +1,10 @@
+
+name: preview
 on:
-  
   workflow_dispatch: # Allow running the workflow manually from the GitHub UI
   push:
-    branches:
-      - 'main'       # Run the workflow when pushing to the main branch
-#  push:
-#    tags:
-#      - "v[0-9]+.[0-9]+.[0-9]+-preview[0-9][0-9][0-9]"
+    tags:
+      - "v[0-9]+.[0-9]+.[0-9]+-preview[0-9][0-9][0-9]"
 
 env:
   NuGetDirectory: ${{ github.workspace}}/nuget
@@ -28,10 +26,7 @@ jobs:
         run: echo "VERSION=${GITHUB_REF/refs\/tags\/v/}" >> $GITHUB_ENV
         
       - name: Pack
-        run: dotnet pack ./IfcConvert.Net.Cloud/IfcConvert.Net.Cloud.csproj --configuration Release --output ${{ env.NuGetDirectory }}
+        run: dotnet pack ./IfcConvert.Net.Cloud/IfcConvert.Net.Cloud.csproj --configuration Release /p:Version=${VERSION} --output ${{ env.NuGetDirectory }}
 
       - name: Publish NuGet package
-        run: |
-          foreach($file in (Get-ChildItem "${{ env.NuGetDirectory }}" -Recurse -Include *.nupkg)) {
-              dotnet nuget push $file --api-key "${{ secrets.NUGET_APIKEY }}" --source https://api.nuget.org/v3/index.json --skip-duplicate
-          }
+        run: dotnet nuget push "${{ env.NuGetDirectory }}/IfcConvert.Net.Cloud.$VERSION.nupkg" --api-key "${{ secrets.NUGET_APIKEY }}" --source https://api.nuget.org/v3/index.json --skip-duplicate
