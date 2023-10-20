@@ -1,18 +1,3 @@
-namespace IfcConvert.Net.Test;
-
-public class UnitTest1
-{
-    [Fact]
-    public async Task Test1()
-    {
-        var ifcConvert = new IfcConvert();
-        var input = "TestFiles/1.ifc";
-        var output = "TestFiles/1.svg";
-        var argument = new ArgumentBuilder()
-            .AutoYes()
-            .Include()
-            .Entities(new []{"IfcWall", "IfcColumn"})
-            .Build();
-        await ifcConvert.Convert(input, output, argument);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:78102c4152ecc0b391bd6a6974a3499972655393a0ac8579917a316457e2d89d
+size 1263
