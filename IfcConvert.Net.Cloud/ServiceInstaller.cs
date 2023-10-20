@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2592cdbd6de3babe362430d16998bb557616079dde0fa1bd64306ee6596a3250
-size 460
+﻿using Microsoft.Extensions.DependencyInjection;
+
+namespace IfcConvert.Net.Cloud;
+
+public static class ServiceInstaller
+{
+    public static void AddIfcConvert(this IServiceCollection services, Action<ToolSetting> option)
+    {
+        services.AddSingleton<IIfcConvert, IfcConvert>();
+        services.Configure(option);
+    }
+    
+    public static void AddIfcConvert(this IServiceCollection services)
+    {
+        services.AddIfcConvert(_ => { });
+    }
+}

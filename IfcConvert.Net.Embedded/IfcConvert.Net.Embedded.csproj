@@ -1,3 +1,33 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c7d7daad18f287ff4105bcc71d2425f752ad15959869b0c1b123d2532e325a54
-size 1184
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFrameworks>net7.0;net8.0</TargetFrameworks>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <PublishAot>true</PublishAot>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\IfcConvert.Net\IfcConvert.Net.csproj" />
+    </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" />
+    </ItemGroup>
+    <ItemGroup>
+        <None Remove="Tool\IfcConvert" />
+        <Content Include="Tool\IfcConvert">
+            <Pack>true</Pack>
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Content>
+        <None Remove="Tool\IfcConvert32.exe" />
+        <Content Include="Tool\IfcConvert32.exe">
+            <Pack>true</Pack>
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Content>
+        <None Remove="Tool\IfcConvert64.exe" />
+        <Content Include="Tool\IfcConvert64.exe">
+            <Pack>true</Pack>
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Content>
+    </ItemGroup>
+</Project>

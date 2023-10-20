@@ -1,3 +1,34 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:51045a17dc82f856c87e29eba45d23a380c616f76e95d0526673d8ebad0e7c24
-size 2327
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IfcConvert.Net", "IfcConvert.Net\IfcConvert.Net.csproj", "{6A781487-993A-4711-B189-15929904DE13}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IfcConvert.Net.Test", "IfcConvert.Net.Test\IfcConvert.Net.Test.csproj", "{06A67FA7-95FC-456C-923E-44188E1012CB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IfcConvert.Net.Embedded", "IfcConvert.Net.Embedded\IfcConvert.Net.Embedded.csproj", "{3EE77A6C-FEFA-4829-9E97-58E91105E0B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IfcConvert.Net.Cloud", "IfcConvert.Net.Cloud\IfcConvert.Net.Cloud.csproj", "{EB9DE03F-4B30-43EF-A738-B3B73C2220BB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6A781487-993A-4711-B189-15929904DE13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A781487-993A-4711-B189-15929904DE13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A781487-993A-4711-B189-15929904DE13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A781487-993A-4711-B189-15929904DE13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06A67FA7-95FC-456C-923E-44188E1012CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06A67FA7-95FC-456C-923E-44188E1012CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06A67FA7-95FC-456C-923E-44188E1012CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06A67FA7-95FC-456C-923E-44188E1012CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EE77A6C-FEFA-4829-9E97-58E91105E0B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EE77A6C-FEFA-4829-9E97-58E91105E0B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EE77A6C-FEFA-4829-9E97-58E91105E0B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EE77A6C-FEFA-4829-9E97-58E91105E0B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB9DE03F-4B30-43EF-A738-B3B73C2220BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB9DE03F-4B30-43EF-A738-B3B73C2220BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB9DE03F-4B30-43EF-A738-B3B73C2220BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB9DE03F-4B30-43EF-A738-B3B73C2220BB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

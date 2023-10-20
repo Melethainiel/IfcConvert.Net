@@ -1,3 +1,52 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:123a0d9fe6b8bb2ec96412f1b2b25d993ae1d3751916aaf75e43e173d952b8a5
-size 1493
+using IfcConvert.Net.Cloud;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Options;
+
+namespace IfcConvert.Net.Test;
+
+public class UnitTest1
+{
+    [Fact]
+    public async Task TestEmbedded()
+    {
+        IIfcConvert ifcConvert = new Embedded.IfcConvert();
+        var input = "TestFiles/1.ifc";
+        var output = "TestFiles/1.svg";
+        var argument = new ArgumentBuilder().AutoYes()
+                .Include()
+                .Entities(new[] { "IfcFooting" })
+                .SvgNoCss()
+                .SectionHeightFromStoreys()
+                .SectionHeight(-.1)
+                .NoProgress()
+                .Build();
+        await ifcConvert.Convert(
+                input,
+                output,
+                argument);
+    }
+    
+    [Fact]
+    public async Task TestCloud()
+    {
+        var services = new ServiceCollection();
+        services.AddIfcConvert();
+        
+        
+        IIfcConvert ifcConvert = new Cloud.IfcConvert(new ToolSetting());
+        var input = "TestFiles/1.ifc";
+        var output = "TestFiles/1.svg";
+        var argument = new ArgumentBuilder().AutoYes()
+                .Include()
+                .Entities(new[] { "IfcFooting" })
+                .SvgNoCss()
+                .SectionHeightFromStoreys()
+                .SectionHeight(-.1)
+                .NoProgress()
+                .Build();
+        await ifcConvert.Convert(
+                input,
+                output,
+                argument);
+    }
+}

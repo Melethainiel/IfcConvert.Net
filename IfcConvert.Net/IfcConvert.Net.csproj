@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:dea4d8e22fbed7f03431cd0dcab555ac877fc8bb76fb424ae47321e564973ded
-size 315
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFrameworks>net7.0;net8.0</TargetFrameworks>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <LangVersion>preview</LangVersion>
+        <PublishAot>true</PublishAot>
+    </PropertyGroup>
+
+</Project>

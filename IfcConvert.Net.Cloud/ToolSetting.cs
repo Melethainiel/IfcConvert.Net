@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cf38e3459fec7db1583679ac2ba61cf5ccda034cfdb4bf225835e386bf46aa0b
-size 454
+﻿namespace IfcConvert.Net.Cloud;
+
+public sealed class ToolSetting
+{
+    public string Win64Url { get; set; } = "https://s3.amazonaws.com/ifcopenshell-builds/IfcConvert-v0.7.0-f0e03c7-win64.zip";
+    public string Win32Url { get; set; } = "https://s3.amazonaws.com/ifcopenshell-builds/IfcConvert-v0.7.0-f0e03c7-win32.zip";
+    public string LinuxUrl { get; set; } = "https://s3.amazonaws.com/ifcopenshell-builds/IfcConvert-v0.7.0-f0e03c7-linux64.zip";
+}
