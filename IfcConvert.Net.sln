@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IfcConvert.Net", "IfcConvert.Net\IfcConvert.Net.csproj", "{6A781487-993A-4711-B189-15929904DE13}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IfcConvert.Net.Test", "IfcConvert.Net.Test\IfcConvert.Net.Test.csproj", "{06A67FA7-95FC-456C-923E-44188E1012CB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IfcConvert.Net.Sample", "IfcConvert.Net.Sample\IfcConvert.Net.Sample.csproj", "{A72857E0-FCAB-47BC-82F1-417E231F274D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6A781487-993A-4711-B189-15929904DE13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A781487-993A-4711-B189-15929904DE13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A781487-993A-4711-B189-15929904DE13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A781487-993A-4711-B189-15929904DE13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06A67FA7-95FC-456C-923E-44188E1012CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06A67FA7-95FC-456C-923E-44188E1012CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06A67FA7-95FC-456C-923E-44188E1012CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06A67FA7-95FC-456C-923E-44188E1012CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A72857E0-FCAB-47BC-82F1-417E231F274D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A72857E0-FCAB-47BC-82F1-417E231F274D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A72857E0-FCAB-47BC-82F1-417E231F274D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A72857E0-FCAB-47BC-82F1-417E231F274D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

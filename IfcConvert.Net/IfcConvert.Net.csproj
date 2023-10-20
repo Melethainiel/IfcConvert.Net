@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFrameworks>net7.0;net8.0</TargetFrameworks>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <LangVersion>preview</LangVersion>
+        <PublishAot>true</PublishAot>
+        <RuntimeIdentifiers>linux-x64;win-x64;win-x86</RuntimeIdentifiers>
+    </PropertyGroup>
+    <ItemGroup>
+      <None Remove="Tool\IfcConvert" />
+      <Content Include="Tool\IfcConvert">
+        <Pack>true</Pack>
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="Tool\IfcConvert32.exe" />
+      <Content Include="Tool\IfcConvert32.exe">
+        <Pack>true</Pack>
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="Tool\IfcConvert64.exe" />
+      <Content Include="Tool\IfcConvert64.exe">
+            <Pack>true</Pack>
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+    </ItemGroup>
+
+</Project>
