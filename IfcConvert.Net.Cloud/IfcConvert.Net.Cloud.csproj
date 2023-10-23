@@ -8,7 +8,7 @@
         <LangVersion>preview</LangVersion>
         <EnablePackageValidation>true</EnablePackageValidation>
         <PackageId>IfcConvert.Net.Cloud</PackageId>
-        <Version>1.0.0</Version>
+        <Version>1.0.1</Version>
         <Authors>Melethainiel Aerin</Authors>
         <Company>Melethainiel Aerin</Company>
         <Description>Simple wrapper arround IfcOpenShell</Description>
